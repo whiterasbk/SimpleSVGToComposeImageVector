@@ -2,6 +2,8 @@
 
 一个简单轻量用于将 `svg path` 的 `d` 属性转换为 `Compose ImageVector` 对象的库
 
+[English](https://github.com/whiterasbk/SimpleSVGToComposeImageVector/blob/master/README.md) | 简体中文
+
 **简单**: 
 - 提供简单函数便于使用
 
