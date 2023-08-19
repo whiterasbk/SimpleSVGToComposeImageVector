@@ -2,7 +2,7 @@
 
 a simple, light lib to show path from svg in compose image vector
 
-**simple**
+**simple**: 
 simple usage functions provided
 
 **light**: 
