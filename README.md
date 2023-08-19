@@ -1,18 +1,16 @@
 # SimpleSVGToComposeImageVector
 
-a simple, light lib to show path from svg in compose image vector
+a simple, light lib to show path from `svg` in compose image vector
 
 **simple**: 
-
 - simple usage functions provided
 
 **light**: 
 - size of compiled aar is only `19.6kb`
 - only compose dependencies used, not including any other libraries
 
-
 ## How to use
-1. add repositories in `settings.gradle`
+1. add `jitpack` repositories to `settings.gradle`
    ```groovy
     dependencyResolutionManagement {
         repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -23,13 +21,12 @@ a simple, light lib to show path from svg in compose image vector
         }
     }
    ```
-2. add dependencies in `build.gradle`
+2. add dependencies to `build.gradle`
    ```groovy
    dependencies {
        implementation 'com.github.whiterasbk:SimpleSVGToComposeImageVector:$latest_version'
    }
    ```
-
 3. using `svgToImageVector` to convert svg path into image vector
    ```kotlin
     @Composable
@@ -56,5 +53,21 @@ a simple, light lib to show path from svg in compose image vector
        GitHub()
     }
    ```
+
 ## Preview
 ![image](https://github.com/whiterasbk/SimpleSVGToComposeImageVector/assets/31107204/1a161d78-81c3-4900-b56b-774d13f344b1)
+
+## How it works
+for input svg string, `SimpleSVGToComposeImageVector` use `xmlpull` to parse, aiming to get following infomation
+
+for `<svg>` tag:
+- `height` attribute
+- `width` attribute
+
+for `<path>` tag:
+- `d` attribute (target)
+
+after that, `SimpleSVGToComposeImageVector` use `ImageVector.Builder.path` to generate path according to `d` attribute 
+
+## Not supporting
+`SimpleSVGToComposeImageVector` focus on `ImageVector` side, only support `ImageVector` features, so features like animation are not in develop plans. In a certain svg file, `SimpleSVGToComposeImageVector` only parse `<path>` and `<svg>` tag
