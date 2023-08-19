@@ -2,6 +2,13 @@
 
 a simple, light lib to show path from svg in compose image vector
 
+**simple**
+simple usage functions provided
+
+**light**: 
+1. size of compiled aar is only `19.6kb`
+2. only compose dependencies used, not including any other libraries
+
 
 ## How to use
 1. add repositories in `settings.gradle`
@@ -11,7 +18,7 @@ a simple, light lib to show path from svg in compose image vector
         repositories {
             google()
             mavenCentral()
-            maven { url 'https://www.jitpack.io' }
+            maven { url 'https://www.jitpack.io' } // add here
         }
     }
    ```
