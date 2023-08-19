@@ -50,27 +50,39 @@ dependencies {
 
 publishing {
     publications {
-        mavenJava(MavenPublication) {
-            // from components.android
-
+        // Creates a Maven publication called "release".
+        release(MavenPublication) {
+            from components.release
             groupId = 'com.github.whiterasbk'
             artifactId = 'ss2civ'
             version = '0.0.1'
-
-            pom {
-                name = 'Simple SVG to Compose ImageVector'
-                description = 'A simple light Android library that showing path using path label of svg'
-                licenses {
-                    license {
-                        name = 'The Apache License, Version 2.0'
-                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    }
-                }
-            }
         }
     }
-
-    repositories {
-        mavenLocal()
-    }
 }
+
+// publishing {
+//     publications {
+//         mavenJava(MavenPublication) {
+//             // from components.android
+
+//             groupId = 'com.github.whiterasbk'
+//             artifactId = 'ss2civ'
+//             version = '0.0.1'
+
+//             pom {
+//                 name = 'Simple SVG to Compose ImageVector'
+//                 description = 'A simple light Android library that showing path using path label of svg'
+//                 licenses {
+//                     license {
+//                         name = 'The Apache License, Version 2.0'
+//                         url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     repositories {
+//         mavenLocal()
+//     }
+// }
