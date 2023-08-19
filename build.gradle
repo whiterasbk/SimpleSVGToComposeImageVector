@@ -48,14 +48,16 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-publishing {
-    publications {
-        // Creates a Maven publication called "release".
-        release(MavenPublication) {
-            from components.release
-            groupId = 'com.github.whiterasbk'
-            artifactId = 'ss2civ'
-            version = '0.0.1'
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.jitpack'
+                artifactId = 'android-example'
+                version = '1.0'
+            }
         }
     }
 }
