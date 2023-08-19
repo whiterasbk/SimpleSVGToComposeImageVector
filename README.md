@@ -2,6 +2,8 @@
 
 a simple, light lib to show path from `svg` in compose image vector
 
+英文 | [简体中文](https://github.com/whiterasbk/SimpleSVGToComposeImageVector/blob/master/README-zh_cn.md)
+
 **simple**: 
 - simple usage functions provided
 
