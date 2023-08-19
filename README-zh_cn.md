@@ -26,7 +26,7 @@
 2. 添加依赖到 `build.gradle`
    ```groovy
    dependencies {
-       implementation 'com.github.whiterasbk:SimpleSVGToComposeImageVector:$latest_version'
+       implementation 'com.github.whiterasbk:SimpleSVGToComposeImageVector:$latest_version' // latest_version as c9435c9499
    }
    ```
 3. 使用 `svgToImageVector` 函数 将 `svg` 转换为 `ImageVector`
