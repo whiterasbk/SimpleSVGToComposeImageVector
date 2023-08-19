@@ -26,7 +26,7 @@ English | [简体中文](https://github.com/whiterasbk/SimpleSVGToComposeImageVe
 2. add dependencies to `build.gradle`
    ```groovy
    dependencies {
-       implementation 'com.github.whiterasbk:SimpleSVGToComposeImageVector:$latest_version'
+       implementation 'com.github.whiterasbk:SimpleSVGToComposeImageVector:$latest_version' // latest_version as c9435c9499
    }
    ```
 3. using `svgToImageVector` to convert svg path into image vector
