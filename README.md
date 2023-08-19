@@ -3,11 +3,12 @@
 a simple, light lib to show path from svg in compose image vector
 
 **simple**: 
-simple usage functions provided
+
+- simple usage functions provided
 
 **light**: 
-1. size of compiled aar is only `19.6kb`
-2. only compose dependencies used, not including any other libraries
+- size of compiled aar is only `19.6kb`
+- only compose dependencies used, not including any other libraries
 
 
 ## How to use
