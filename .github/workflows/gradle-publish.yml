@@ -32,6 +32,9 @@ jobs:
 
     - name: Setup Android SDK
       uses: android-actions/setup-android@v2 # avaviable in $ANDROID_SDK_ROOT
+    - name: Set Gradle Script Executable
+      run: |
+        chmod +x ./gradlew 
       
     - name: Build with Gradle
       uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
